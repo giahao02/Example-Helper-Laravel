@@ -45,6 +45,7 @@ class CKEditorHelper
         ';
     }
 
+    // old ver change to js
     // private function test(array $args): string
     // {
     //     return '
