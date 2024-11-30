@@ -18,7 +18,7 @@ return new class extends Migration
             $table->longText('content'); // Dùng Editor
             $table->string('image')->nullable(); // Hình ảnh
             $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
-            $table->foreignId('created_by')->constrained('users')->onDelete('cascade');
+            $table->foreignId('created_by')->constrained('users')->onDelete('cascade'); //delete user xóa cả hàng luôn
             $table->foreignId('updated_by')->nullable()->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
